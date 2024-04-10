@@ -1,6 +1,4 @@
-# module created here 
-
-provider "aws" {
+ provider "aws" {
   region = var.awsRegion
 }
 
@@ -10,6 +8,6 @@ resource "aws_instance" "ec2" {
   instance_type = var.instance_type
 
   tags = {
-    Name = "task01-ec2"
+    Name = "ec2-created-with-module"
   }
 }

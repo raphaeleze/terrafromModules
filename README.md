@@ -4,15 +4,23 @@ This repository contains a collection of Terraform modules that can be used in y
 
 ## Usage
 
-To use a module from this repository in your Terraform configuration, use the following syntax:
+To use this module in your Terraform configuration, use the following syntax:
 
 ```terraform
-module "<module_name>" {
-  source  = "git::https://github.com/raphaeleze/terrafromModules"
+module "module_name" {
+  source        = "git::https://github.com/raphaeleze/terrafromModules/tree/main/Aws-Ec2"
   
-  # Define any required or optional variables here
+  awsRegion     = var.awsRegion
+  ami           = var.ami
+  instance_type = var.instance_type
 }
 ```
+
+## Variables
+
+- `awsRegion`: The AWS region where the EC2 instance will be created. Default is `"us-east-1"`.
+- `ami`: The Amazon Machine Image (AMI) that will be used to launch the EC2 instance. Default is `"ami-0f403e3180720dd7e"`.
+- `instance_type`: The type of instance to start. Default is `"t2.micro"`.
 
 Replace `<module_name>` with a name of your choice.
 

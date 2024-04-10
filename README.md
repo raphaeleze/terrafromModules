@@ -10,20 +10,20 @@ To use a module from this repository in your Terraform configuration, use the fo
 module "<module_name>" {
   source  = "git::https://github.com/raphaeleze/terrafromModules"
   
-  // Define any required or optional variables here
+  # Define any required or optional variables here
 }
 ```
 
 Replace `<module_name>` with a name of your choice.
 
-## Modules
-
-This repository includes the following modules:
-
-- `ec2mOdule` (description will be updated)
-- 
-- `...`
-
+## Modules Folder Structure
+```
+├── ModuleName/
+│   └── file.tf (Terraform configuration files)
+│   └── README.md
+├── ModuleName2/
+└── ModuleName3/
+```
 For more information on each module, please refer to the README in each module's directory.
 
 ## Requirements

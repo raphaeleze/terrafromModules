@@ -2,6 +2,8 @@
 
 This repository contains a collection of Terraform modules that can be used in your Terraform configuration files.
 
+This was created for demonstation purpose on my github repo [terraformPractice/04](https://github.com/raphaeleze/terraformPractice/tree/main/04).  
+
 ## Usage
 
 To use this module in your Terraform configuration, use the following syntax:
